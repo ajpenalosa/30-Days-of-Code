@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Day 2: Operators</title>
+</head>
+<body>
+    
+<script>
+    
+function main(mealCost, tipPercent, taxPercent) {
+
+    // Write your code here
+
+    var tip = mealCost * (tipPercent / 100);
+    var tax = mealCost * (taxPercent / 100);
+
+    var totalCost = mealCost + tip + tax;
+
+    // Use console.log() to print to stdout
+
+    console.log("The total meal cost is " + Math.round(totalCost) + " dollars." );
+
+}
+
+main(12, 20, 8);
+
+</script>
+</body>
+</html>
