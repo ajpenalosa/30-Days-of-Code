@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Day 3: Intro to Conditional Statements</title>
+</head>
+<body>
+    
+<script>
+
+// Solving Area
+
+function main(N) {
+
+    // If N is odd, print "Weird"
+    if (N % 2 != 0) {
+        console.log("Weird");
+
+        return "Weird";
+    }
+
+    // If N is even and in the inclusive range of 2 to 5, print "Not Weird"
+    if (N % 2 === 0 && 2 <= N && N <= 5) {
+        console.log("Not Weird");
+
+        return "Not Weird";
+    }
+
+    // If N is even and greater than 20, print "Not Weird"
+    if (N % 2 === 0 && N > 20) {
+        console.log("Not Weird");
+
+        return "Not Weird";
+    }
+
+    // If N is even and in the inclusive range of 6 to 20 , print "Weird"
+    if (N % 2 === 0 && 6 <= N && N <= 20) {
+        console.log("Weird");
+
+        return "Weird";
+    }
+
+}
+
+var firstCase = main(3);
+var secondCase = main(4);
+var thirdCase = main(10);
+var fourthCase = main(20);
+
+var wrongCaseOne = main(18); // Weird
+var wrongCaseTwo = main(20); // Weird
+
+console.log({ firstCase: firstCase, expected: 'Weird' });
+console.log({ secondCase: secondCase, expected: 'Not Weird' });
+console.log({ thirdCase: thirdCase, expected: 'Weird' });
+console.log({ fourthCase: fourthCase, expected: 'Not Weird' });
+
+console.log({ wrongCaseOne: wrongCaseOne, expected: 'Weird' });
+console.log({ wrongCaseTwo: wrongCaseTwo, expected: 'Weird' });
+
+// Code to submit
+
+function main() {
+    var N = parseInt(readLine());
+
+    if (N % 2 != 0) {
+        console.log("Weird");
+    }
+
+    if (N % 2 === 0 && 2 <= N && N <= 5) {
+        console.log("Not Weird");
+    }
+
+    if (N % 2 === 0 && N > 20) {
+        console.log("Not Weird");
+    }
+
+    if (N % 2 === 0 && 6 <= N && N <= 20) {
+        console.log("Weird");
+    }
+
+}
+
+</script>
+</body>
+</html>
